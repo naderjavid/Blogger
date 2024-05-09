@@ -1,10 +1,10 @@
 ﻿namespace Blogger.Infrastructure.Persistence;
-public class BloggerDbContextSchema
+public static class BloggerDbContextSchema
 {
     public const string DefualtSchema = "blog";
     public const string DefualtConnectionStringName = "SvcDbContext";
 
-    public class Subscriber 
+    public static class Subscriber 
     {
         public const string TableName = "Subscribers";
         public const string ArticleIdTableName = "SubscriberArticleIds";
@@ -12,7 +12,7 @@ public class BloggerDbContextSchema
     
     }
 
-    public class Article
+    public static class Article
     { 
         public const string TableName = "Articles";
         public const string ForeignKey = "ArticleId";
@@ -26,7 +26,7 @@ public class BloggerDbContextSchema
     }
 
 
-    public class Comment
+    public static class Comment
     { 
         public const string TableName = "Comments";
         public const string ForeignKey = "CommentId";
